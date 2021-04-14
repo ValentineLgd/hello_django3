@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-977!+d3t(*wkkf&_rz9_x8lnz2pdcu=@#7_x@=!+(m8z*!p4x-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME)')]
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
@@ -81,7 +81,6 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
